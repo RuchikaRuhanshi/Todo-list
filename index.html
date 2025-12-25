@@ -4,55 +4,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Tailwind -->
   <link href="./output.css" rel="stylesheet">
-
-  <!-- Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-
   <title>Todo List – Figma Project</title>
-
-<style>
-  html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-</style>
+  <style>
+    html,
+    body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 </head>
-  <body class="bg-[#F6FBFB] m-0">
+
+<body class="bg-[#F6FBFB] m-0">
   <section class="min-h-screen flex">
 
-    <!-- LEFT HALF -->
-    <div class="w-1/2 px-20 pt-28 flex flex-col gap-12">
+    <div class="w-1/2 px-20 pt-28 flex flex-col gap-10">
       <h1 class="text-5xl font-extrabold leading-tight">
         TODO LIST FOR <br>
         FIGMA PROJECT
       </h1>
 
-      <p class="text-gray-600 text-lg font-medium">
+      <p class="text-gray-600 text-lg font-medium gap-4">
         Build to ease our work
       </p>
 
-      <button class="bg-black text-white px-8 py-4 text-lg rounded-full w-80 font-semibold size-20">
-        Theme Mode
-      </button>
+      <div class="flex gap-4 mb-12">
+        <button class="px-6 py-3 rounded-full border font-medium gap-2 w-60">
+          Light
+        </button>
+        <button class="px-6 py-3 rounded-full bg-black text-white font-medium gap-2 w-60">
+          Dark
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-6 mb-10 text-3xl font-semibold">
+        <a href="#home" class="flex items-center gap-3 hover:text-gray-500 transition">
+          <img src="assests/bullet.png" alt="bullet" class="w-6 h-6" />
+          Home
+        </a>
+
+        <a href="#stats" class="flex items-center gap-3 hover:text-gray-500 transition">
+          <img src="assests/bullet.png" alt="bullet" class="w-6 h-6" />
+          Stats
+        </a>
+
+        <a href="#about" class="flex items-center gap-3 hover:text-gray-500 transition">
+          <img src="assests/bullet.png" alt="bullet" class="w-6 h-6" />
+          About
+        </a>
+      </nav>
+
     </div>
-    
-    <!-- RIGHT HALF -->
-<div class="w-1/2 relative flex items-center pr-16 overflow-hidden">
 
-  <img
-    src="Group 427320604.png"
-    alt="Todo Preview"
-    class="absolute inset-0 w-full h-full object-cover"
-  />
-
-</div>
+    <div class="w-1/2 relative flex items-center pr-16 overflow-hidden">
+      <img src="assests/Group 427320604.png" alt="Todo Preview" class="absolute inset-0 w-full h-full object-cover" />
+    </div>
 
   </section>
 </body>
-
 
 </html>
