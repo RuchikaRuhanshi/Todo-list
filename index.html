@@ -17,7 +17,7 @@
   </style>
 </head>
 
-<body class="bg-[#F6FBFB] m-0">
+<body data-theme="light" class="m-0 transition-colors duration-300">
   <section class="min-h-screen flex">
 
     <div class="w-1/2 px-20 pt-28 flex flex-col gap-10">
@@ -26,15 +26,15 @@
         FIGMA PROJECT
       </h1>
 
-      <p class="text-gray-600 text-lg font-medium gap-4">
+      <p id="subtitle" class="text-gray-600 text-lg font-medium gap-4">
         Build to ease our work
       </p>
 
       <div class="flex gap-4 mb-12">
-        <button class="px-6 py-3 rounded-full border font-medium gap-2 w-60">
+        <button id="lightBtn" class="px-6 py-3 rounded-full border font-medium gap-2 w-60">
           Light
         </button>
-        <button class="px-6 py-3 rounded-full bg-black text-white font-medium gap-2 w-60">
+        <button id="darkBtn" class="px-6 py-3 rounded-full bg-black text-white font-medium gap-2 w-60">
           Dark
         </button>
       </div>
@@ -63,6 +63,7 @@
     </div>
 
   </section>
+  <script src="script.js"></script>
 </body>
 
 </html>
