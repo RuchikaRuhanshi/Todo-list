@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const lightBtn = document.getElementById("lightBtn");
   const darkBtn = document.getElementById("darkBtn");
   const bullets = document.querySelectorAll("nav img");
+  const subtitle = document.getElementById("subtitle");
  
   function setLightTheme() {
     body.dataset.theme = "light";
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", "light");
   }
 
-  function setDarkTheme() {
+  function setDarkTheme() 
     body.dataset.theme = "dark";
 
     darkBtn.style.background = "black";
@@ -33,10 +34,43 @@ document.addEventListener("DOMContentLoaded", () => {
     lightBtn.style.color = "black";
     lightBtn.style.border = "2px solid #888"; 
 
-    bullets.forEach(b => b.src = "assests/bullet white.png");
+    bullets.forEach(b = b.src = "assests/bullet white.png");
 
     localStorage.setItem("theme", "dark");
   }
+
+  function setLightTheme() {
+  body.dataset.theme = "light";
+
+  lightBtn.style.background = "white";
+  lightBtn.style.color = "black";
+  lightBtn.style.border = "2px solid #F5F5F5";
+  darkBtn.style.background = "black";
+  darkBtn.style.color = "white";
+  darkBtn.style.border = "2px solid #444"; 
+  
+  subtitle.style.color = "#4B5563"; 
+  bullets.forEach(b = b.src = "assests/bullet.png");
+
+  localStorage.setItem("theme", "light");
+}
+
+function setDarkTheme() 
+  body.dataset.theme = "dark";
+  darkBtn.style.background = "black";
+  darkBtn.style.color = "white";
+  darkBtn.style.border = "2px solid #444";
+
+  lightBtn.style.background = "white";
+  lightBtn.style.color = "black";
+  lightBtn.style.border = "2px solid #F5F5F5";
+
+  subtitle.style.color = "#D1D5DB"; 
+
+  bullets.forEach(b => b.src = "assests/bullet white.png");
+
+  localStorage.setItem("theme", "dark");
+}
 
   lightBtn.addEventListener("click", setLightTheme);
   darkBtn.addEventListener("click", setDarkTheme);
